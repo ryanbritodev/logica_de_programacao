@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+	
+	function pulaLinha(){
+
+		document.write("<br><br>");
+	}
+
+	function mostra(texto){
+
+		document.write(texto);
+		pulaLinha();
+	}
+
+	var anoCopa = 1930
+
+	var anoUltimaCopa = 2022
+
+	var anoEstipulado = parseInt(prompt("Estipule o ano limite:"))
+
+	while (anoCopa <= anoEstipulado && anoCopa <= anoUltimaCopa){
+
+		mostra("Teve copa em " + anoCopa + ".");
+		anoCopa += 4;
+
+	}
+
+	while (anoUltimaCopa + 4 <= anoEstipulado){
+
+		anoUltimaCopa += 4;
+		mostra("Irá ter copa em " + anoUltimaCopa + ".");
+
+	}
+
+	mostra("FIM!");
+
+</script>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	function converta(texto) {
+
+		return parseInt(texto);
+	}
+
+	alert("Bem-vindo! Vamos calcular a quantidade de pontos que seu time fez nesse campeonato?");
+
+
+	var nomeTime = prompt("Digite o nome do seu time:");
+	var vitorias = converta(prompt("Digite o número de vitórias do seu time:"));
+	var empates = converta(prompt("Digite o número de empates do seu time:"));
+	var derrotas = converta(prompt("Digite o número de derrotas do seu time:"));
+	var pontos = vitorias * 3 + empates + derrotas * 0;
+
+	mostra("O número de pontos que o " + nomeTime + " somou nessa temporada foi de: " + pontos + " pontos.");
+
+	if(pontos > 45){
+
+		mostra("Seu time atingiu a quantidade de pontos necessária para não ser rebaixado.");
+	}
+
+	if(pontos < 45){
+
+		mostra("Seu time não atingiu a quantidade de pontos necessária para não ser rebaixado.");
+	}
+
+	if(pontos == 45){
+
+		mostra("Seu time quase não alcançou a quantidade de pontos necessária para fugir do rebaixamento, porém permaneceu na mesma divisão.")
+	}
+
+</script>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function converta(texto) {
+		return parseInt(texto);
+	}
+
+	function sorteia() {
+		return Math.round(Math.random() * 10000);
+	}
+
+	var numeroC = sorteia();
+	console.log(numeroC);
+
+	var numeroP = converta(prompt("Escolha um número entre 1 e 10000!"));
+
+	if(numeroP == numeroC) {
+
+		mostra("Parabéns! Você acertou o chute! O número pensado foi " + numeroC + ".");
+
+	} else {
+
+		if(numeroP < numeroC) {
+			
+			mostra("Que pena! Você errou. O número que você chutou foi menor do que o número que o programa sorteou.");
+
+		} else {
+
+			mostra("Que pena! Você errou. O número que você chutou foi maior do que o número que o programa sorteou.");
+		}
+	}
+
+</script>

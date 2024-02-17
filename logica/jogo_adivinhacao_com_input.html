@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<h1> Jogo de Adivinhação </h1>
+
+<br>
+
+<head> <p> Tente inserir um número entre 1 e 10, caso você acerte, uma mensagem aparecerá! <p> </head>
+
+<br>
+<br>
+
+<input>
+
+<button> Adivinhar o código </button>
+
+<script>
+				 // 0  1  2   3  4
+	var segredos = [3, 9, 10, 2, 7];
+	var input = document.querySelector("input");
+	var button = document.querySelector("button");
+
+	function verifica(){
+
+		var achou = false;
+
+		for (var posicao = 0; posicao < segredos.length; posicao++) {
+
+                if (input.value == segredos[posicao]) {
+
+                    alert("Você acertou! Parabéns.");
+                    achou = true;
+                    break;
+                }
+            }
+
+            if (achou == false) {
+                alert("Você errou!");
+            }
+
+            input.value = "";
+            input.focus();
+        }
+
+	button.onclick = verifica;
+
+</script>
+
+</html>
