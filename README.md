@@ -1,6 +1,6 @@
 # Welcome to My GitHub Page! 👋
 
-Hi, I'm Ryan! 🚀 I'm an 18-year-old software engineering student at FIAP in SP, Brazil.
+Hi, I'm Ryan! 😁 I'm an 18-year-old software engineering student at FIAP in SP, Brazil.
 
 ## About Me
 - 📚 Currently studying Software Engineering at FIAP.
